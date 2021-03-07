@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    border: 2px solid #dc2f02;
+    background-color: #000000;
+    width: 170px;
+    height: 50px;
+    color: #dc2f02;
+    font-size: 1.5rem;
+    /* transition-property: all;
+    transition-duration: 0.02s; */
+}
+
+button:hover{
+    transform: translateY(-10px);
+    border: 2px solid #d4d700;
+    color: #f8fc06;
+    box-shadow: 0px 2px 3px #d4d700;
+}
