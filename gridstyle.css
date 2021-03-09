@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style-type: none;
+}
+
+nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #343e40;
+    min-height: 8vh;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+#bg-img{
+    width: 100vw;
+    height: 60vh;
+    background-image: url(image/cam-morin-knKm7u_7Ihw-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: carousel;
+    animation-duration: 30s;
+    /* animation-delay: 5s; */
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes carousel{
+    0%{
+        background-image: url(image/cam-morin-knKm7u_7Ihw-unsplash.jpg);
+    }
+
+    25%{
+        background-image: url(image/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg);
+    }
+
+    50%{
+        background-image: url(image/tristan-colangelo-d4OnMIl5OYk-unsplash.jpg);
+    }
+
+    75%{
+        background-image: url(image/sara-kurfess-5epnzwsphl0-unsplash.jpg);
+    }
+
+    100%{
+        background-image: url(image/cam-morin-knKm7u_7Ihw-unsplash.jpg);
+    }
+}
+
+
+.container{
+    width: 70vw;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 50px;   
+}
+
+article{
+    min-width: 150px;
+    max-width: 350px;
+    text-align:center;
+}
+
+figure{
+    width: 100%;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+figure:hover{
+    box-shadow: 8px 10px 10px #ccc;
+    transform: scale(1.02);
+}
+
+figure img{
+    width: 100%;
+}
+
+button{
+    font-size: 1.4rem;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+footer{
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #343a40;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 0px;
+
+}
+
+@media screen and (max-width: 1200px){
+    nav,ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    li,a{
+        margin-top: 3px;
+    }
+}
